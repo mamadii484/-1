@@ -1,3 +1,133 @@
-@charset "utf-8";
-/* CSS Document */
 
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #111; 
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.landing-container {
+    text-align: center;
+    animation: slideDown 1s ease-out; 
+}
+
+.welcome-text {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+
+.signup-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+
+.login-btn {
+    background-color: #fff;
+    color: #111;
+}
+
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+		
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    animation: slideDown 1s ease-out;
+}
+
+.form-container input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+    font-size: 16px;
+}
+
+.form-container input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #e74c3c;
+}
+
+.form-container button {
+    width: 150px;
+
+.bg-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    overflow: hidden;
+    background: #111;
+}
+
+
+.particle {
+    position: absolute;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: floatParticles linear infinite;
+}
+
+
+@keyframes floatParticles {
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+}
+
+}
+
+    }
+}
